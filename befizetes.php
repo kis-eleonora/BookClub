@@ -3,26 +3,7 @@ include_once 'head.php';
 include_once 'uj_befizetes.php';
 require_once 'connect.php';
 ?>
-<h1>Bagoly Könyv Klub</h1>
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.php">Tagok</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="befizetes.php">Befizetés</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Az iskola honlapja</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>    
-</nav>
+
 <div class="form">
     <form method="POST">
         <select name="id" id="id" onchange="befizetesek()" class="form-control">
@@ -67,6 +48,4 @@ require_once 'connect.php';
         xhttp.send();
     }
 </script>
-<footer>
-    <p>© Tisza-Kis Eleonóra, 2022</p>
-</footer>
+
